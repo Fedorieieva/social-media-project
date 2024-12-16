@@ -1,0 +1,12 @@
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.swiperSlideWrapper {
+  border-radius: var(--border-radius-primary);
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

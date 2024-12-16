@@ -1,0 +1,22 @@
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.headerActions {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.actionBtn {
+  svg {
+    height: 15px;
+  }
+}
+
+.comment {
+  padding-left: 25px;
+}
+

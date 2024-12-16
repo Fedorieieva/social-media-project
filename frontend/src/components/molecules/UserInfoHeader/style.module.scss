@@ -1,0 +1,15 @@
+.userInfo,
+.userLink {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo {
+  justify-content: space-between;
+}
+
+.userLink {
+  gap: 10px;
+
+  color: var(--black);
+}

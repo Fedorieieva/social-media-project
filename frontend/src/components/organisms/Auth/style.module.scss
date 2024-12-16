@@ -1,0 +1,36 @@
+.authWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 450px;
+  border-radius: var(--border-radius-primary);
+  box-shadow: var(--button-shadow);
+  margin: 0 auto;
+}
+
+.authTabWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.authForm {}
+
+.loginBg {
+  background: var(--gradient);
+}
+
+.signupBg {
+  background: var(--gradient-mirror);
+}
+
+.authTab {
+  background-color: var(--dark-violette);
+  border-radius: 0;
+
+  &Login,
+  &SignUp,
+  &:hover {
+    background-color: transparent;
+  }
+}

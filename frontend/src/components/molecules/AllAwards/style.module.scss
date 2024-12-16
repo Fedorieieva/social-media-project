@@ -1,0 +1,28 @@
+@import '../../../index.scss';
+
+.awards {
+  display: flex;
+  flex-direction: column;
+
+  &List {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &Wrapper {
+    display: inline-flex;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+.awardContent {
+  align-self: center;
+
+  padding: 10px;
+  background-color: var(--violette);
+  border-radius: var(--border-radius-primary);
+  color: var(--white);
+}

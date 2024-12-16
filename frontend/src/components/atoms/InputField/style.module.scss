@@ -1,0 +1,47 @@
+.inputFieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fieldInput {
+  flex: 1;
+
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid var(--beige);
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+  caret-color: var(--beige);
+  color: var(--black);
+
+  &:focus {
+    border-color: var(--blue);
+  }
+
+  &::placeholder {
+    color: var(--light-grey);
+  }
+}
+
+.emojiPicker {
+  position: absolute;
+  bottom: 30px;
+  transform: translateX(-90%);
+  z-index: 11;
+}
+
+.emojiBtn {
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+}

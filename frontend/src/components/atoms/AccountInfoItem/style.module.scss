@@ -1,0 +1,24 @@
+@import '../../../index.scss';
+
+.accountInfoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  color: var(--black);
+
+  @include md {
+    font-size: 24px;
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  color: var(--grey);
+
+  @include md {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.editPasswordBtn {
+  background-color: var(--red);
+
+  &:hover{
+    background-color: var(--dark-red);
+    transform: scale(1.01);
+  }
+}

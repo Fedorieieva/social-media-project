@@ -1,0 +1,26 @@
+@import '../../../index.scss';
+
+.toolbarItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 10px;
+  background-color: transparent !important;
+
+  @include md {
+    border-radius: var(--border-radius-secondary);
+    background-color: var(--green) !important;
+  }
+}
+
+.text {
+  display: none;
+  color: var(--black);
+
+  @include xl {
+    display: block;
+  }
+}

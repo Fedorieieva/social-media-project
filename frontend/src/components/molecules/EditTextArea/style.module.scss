@@ -1,0 +1,44 @@
+.commentWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.comment {
+  padding-left: 25px;
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  height: max-content;
+
+  background-color: var(--white);
+  border: none;
+  border-bottom: 1px solid transparent;
+
+  &:enabled {
+    border-color: var(--grey);
+  }
+
+  &:focus {
+    border-bottom: 1px solid var(--blue);
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.emojiPicker {
+  position: absolute;
+  top: 100px;
+  transform: translateX(-68%);
+  z-index: 11;
+}
+
+.editCommentBtn,
+.emojiBtn {
+  svg {
+    height: 20px;
+  }
+}

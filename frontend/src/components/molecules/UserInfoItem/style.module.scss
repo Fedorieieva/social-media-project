@@ -1,0 +1,63 @@
+@import '../../../index.scss';
+
+.userInfoItem {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+
+  @include md {
+    gap: 0;
+    column-gap: 10px;
+  }
+}
+
+.userInfo {
+  grid-row: 2 / 3;
+
+  padding-left: 10px;
+
+  @include md {
+    grid-column: 2 / 3;
+    padding: 0;
+  }
+
+  &Login {
+    display: none;
+    color: var(--grey);
+
+    @include md {
+      display: block;
+    }
+  }
+}
+
+.accountInfoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.modal {
+  padding: 20px 45px;
+  background-color: var(--white);
+  border-radius: var(--border-radius-primary);
+  max-width: 500px;
+  width: 100%;
+
+  &Close {
+    margin-left: auto;
+  }
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.userRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

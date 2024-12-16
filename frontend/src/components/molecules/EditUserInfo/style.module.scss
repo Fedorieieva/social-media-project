@@ -1,0 +1,59 @@
+.edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.selectGender {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    appearance: none;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: var(--button-shadow);
+    }
+  }
+
+  &::after {
+    content: '▼';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 0.75rem;
+    color: var(--dark-green);
+  }
+}
+
+.passwordBtn {
+  //align-self: flex-end;
+  border: 1px solid var(--grey);
+
+  &:hover{
+    transform: scale(1.01);
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../../index.scss';
+
+.userFeed {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  grid-auto-rows: 200px;
+  gap: 4px;
+
+  @include md {
+    grid-auto-rows: 280px;
+  }
+
+  @include lg {
+    grid-auto-rows: 350px;
+  }
+}
+
+.userPost,
+.postBtn {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 0;
+}
+
+.postBtn {
+  background-color: var(--blue);
+
+  p {
+    display: block;
+    padding: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    transform: scale(1.0);
+  }
+}
+
+.userPost {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

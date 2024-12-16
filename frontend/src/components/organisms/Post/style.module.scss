@@ -1,0 +1,75 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &User {
+    margin-bottom: 10px;
+  }
+
+  &Info,
+  &ActionsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.withoutImages {
+  .postContent {
+    order: 0;
+  }
+
+  .postNav {
+    order: 1;
+  }
+
+  .comments {
+    order: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+}
+
+.withImages {
+  .swiper {
+    order: 1;
+  }
+
+  .postNav {
+    order: 2;
+  }
+
+  .postContent {
+    order: 3;
+  }
+
+  .postCommentsBtn {
+    order: 4;
+  }
+
+  .comments {
+    order: 5;
+  }
+}
+
+.commentsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.actionBtn {
+  svg {
+    height: 17px;
+    width: 17px;
+  }
+}

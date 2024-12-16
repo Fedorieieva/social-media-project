@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 7px 0;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--black);
+}
+
+.isLiked {
+  svg {
+    path {
+      fill: var(--red);
+    }
+  }
+}
+
+.isSaved {
+  svg {
+    path {
+      stroke: var(--dark-violette-hover);
+    }
+  }
+}
+
+.save {
+  margin-left: auto;
+}

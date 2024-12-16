@@ -1,0 +1,81 @@
+.heading {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: var(--second-font-family);
+}
+
+.title {
+  position: relative;
+  display: block;
+  padding: 3px 18px;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 3px;
+    height: 30px;
+    background-color: var(--dark-violette-hover);
+  }
+
+  &::before {
+    width: 45px;
+    height: 3px;
+  }
+}
+
+.light {
+  color: var(--white);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.error {
+  color: var(--dark-red);
+}
+
+.text-5xl {
+  font-size: 48px;
+  font-family: var(--second-font-family);
+}
+
+.text-4xl {
+  font-size: 36px;
+  font-family: var(--second-font-family);
+}
+
+.text-3xl {
+  font-size: 30px;
+  font-family: var(--second-font-family);
+}
+
+.text-2xl {
+  font-size: 24px;
+  font-family: var(--second-font-family);
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-xxs {
+  font-size: 10px;
+}

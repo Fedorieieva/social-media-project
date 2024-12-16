@@ -1,0 +1,101 @@
+@import '../index.scss';
+
+.page {
+  height: 90vh;
+  overflow-y: auto;
+
+  @include md {
+    height: 100%;
+    overflow-y: unset;
+  }
+}
+
+.awardsPage,
+.editPage,
+.editUserPassword,
+.savedPage {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.editPage,
+.editUserPassword,
+.savedPage {
+  gap: 25px;
+
+  height: 85vh;
+
+  &Title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+.homePage {
+  position: relative;
+
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .search {
+    display: none;
+
+    @include md {
+      display: block;
+      position: fixed;
+      top: 30px;
+      right: 50px;
+
+      width: 30%;
+    }
+
+    @include md {
+      top: 45px;
+      right: 80px;
+    }
+  }
+
+  .homeFeed {
+    width: 100%;
+  }
+}
+
+.userAccountPage {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .userAccountActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    padding: 5px;
+    border-top: 1px var(--grey) solid;
+  }
+
+  .activeActionBtn {
+    border-radius: 0 !important;
+    border-bottom: 2px var(--dark-violette-hover) solid;
+  }
+}
+
+.authPage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form {
+    width: 450px;
+  }
+}

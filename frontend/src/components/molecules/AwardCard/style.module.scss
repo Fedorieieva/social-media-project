@@ -1,0 +1,17 @@
+.awardBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  padding-bottom: 7px;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.activeBtn {
+  background-color: var(--violette);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
