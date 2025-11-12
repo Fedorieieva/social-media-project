@@ -19,9 +19,9 @@ let corsOptions;
 
 if (process.env.NODE_ENV === "production") {
     corsOptions = {
-        origin: '*',
+        origin: "https://social-media-project-f.vercel.app",
         methods: "GET,POST,PUT,DELETE,PATCH",
-        credentials: false,
+        credentials: true,
     };
 } else {
     corsOptions = {
